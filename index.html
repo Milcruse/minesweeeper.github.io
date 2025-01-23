@@ -1,0 +1,49 @@
+<!DOCTYPE html>  
+<html lang="en">  
+  
+<head>  
+  <meta charset="UTF-8" />  
+  <title>Сапер</title>  
+  <link rel="stylesheet" href="style.css" />  
+</head>  
+  
+<body>  
+  <div class="container">  
+    <div class="game-area">  
+      <div class="board"></div>  
+      <div class="controls">  
+        <button class="start-btn">Начать игру</button>  
+        <button class="settings-btn">Настройки</button>  
+        <div class="options hide">  
+          <label for="difficulty">Сложность:</label>  
+          <select id="difficulty">  
+            <option value="easy">Легко</option>  
+            <option value="hard">Сложно</option>  
+          </select>  
+          <label for="bomb-count">Количество бомб:</label>  
+          <input type="number" min="1" max="100" id="bomb-count" value="10" />  
+          <button class="save-settings-btn">Сохранить</button>  
+        </div>  
+        <div class="help-btn"></div>  
+      </div>  
+    </div>  
+    <div class="popup hide">  
+      <div class="popup-content">  
+        <h2 class="popup-header">Сапер</h2>  
+        <p class="popup-text">  
+          Цель игры - открыть все ячейки, не взорвав ни одной бомбы.  
+        </p>  
+        <h3 class="popup-subheader">Инструкции:</h3>  
+        <ul class="popup-list">  
+          <li>Левый клик открывает ячейку.</li>  
+          <li>Правый клик устанавливает или удаляет флажок.</li>  
+          <li>Цифра на ячейке обозначает количество бомб в соседних ячейках.</li>  
+        </ul>  
+        <button class="popup-close-btn">Понятно!</button>  
+      </div>  
+    </div>  
+  </div>  
+  <script src="script.js"></script>  
+</body>  
+  
+</html> 
